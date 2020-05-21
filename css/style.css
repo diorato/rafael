@@ -1,0 +1,444 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+html, body{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #585454;
+}
+
+/*Header do site*/
+header{
+    padding: 20px 2%;
+   background: #424242;
+  
+}
+header .logo h2{
+    float: left;
+    width: 236px;
+    color: #b4b4b4;
+}
+nav.menu-mobile{
+    float: right;
+    width: 28px;
+    height: 28px;
+    margin-top: 7px;
+    cursor: pointer;
+    background-image: url(/media/menu-mobile.png);
+    background-size: 100% 100%;
+    display:none;
+}
+
+nav.menu-mobile ul{
+    display:none ;
+    z-index: 999;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    background-color: white;
+}
+
+nav.menu-mobile ul li{
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+
+header nav.menu-desktop{
+    float: right;
+}
+
+header nav.menu-desktop ul{
+    padding: 8px 0;
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li{
+    padding: 0 20px;
+    font-size: 14px;
+    float: left;
+    text-transform: uppercase;
+}
+
+header ul a{
+    color: #b4b4b4;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+.bg-top{
+    width: 100%;
+    display: flex;
+}
+
+.bg-top img{
+    width: 100%;
+    height: 338px;
+    float: left;
+}
+
+.text-bg{
+    position: relative;;
+    color: #585454;
+    text-align: center;
+    width: 100%; 
+    margin: 150px 0;
+}
+
+.text-bg h2{
+    padding-top: 15px ;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2.5em;
+}
+
+.text-bg p{
+    font-weight: lighter;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+/*section-main*/
+
+/*.missao{
+    background-color: rgb(243, 237, 237);
+    width: 100%;
+    height: 180px;
+    margin-top: 90px;
+    top: 10px;
+}
+
+.missao .container h2{
+    text-align: center;
+    font-weight: normal;
+    font-size: 2em;
+    padding-top: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-family: 'Varela Round', sans-serif;
+    
+}
+
+.main .container p{
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 1.1em;
+}
+*/
+
+.bg-middle img{
+    width: 100%;
+    image-rendering: crisp-edges;
+}
+.text-valores{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    font-weight: lighter;
+    font-family: 'Varela Round', sans-serif;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+section.valores .container{
+    display: flex;
+    width: 100%;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.valores .container .card-single{
+    width: 33.3%;
+    text-align: center;
+    padding: 30px 10px;
+   
+}
+
+
+.card-single .btn-saiba{
+    background-color: #bdbdbd;
+    width: 40%;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid black;
+    margin-left: 85px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.card-single .btn-saiba:hover {
+    background-color: #585454;
+    color: #bdbdbd;
+}
+
+.card-single .icone-h2{
+    font-size: 40px;
+    padding: 10px 0;
+}
+
+.card-single a{
+    color: #585454;
+    text-decoration: none;
+}
+
+.card-single a:hover{
+    color: #bdbdbd;
+}
+
+section.pastores .container{
+    display: flex;
+    width: 100%;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container .avatar-single{
+    width: 50%;
+    text-align: center;
+    padding: 30px 10px;
+    
+}
+
+.avatar-single img{
+    width: 200px;
+    height: 250px;
+    float: left;
+    border-radius: 50%;
+   padding-right: 12px;
+}
+
+.avatar-single p{
+    text-align: left;
+ 
+}
+
+
+.container .bg-paralax{
+   width: 100%;
+   height: 650px;
+   background-image: url("/media/img_culto_em_casa.jpeg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   object-position: bottom;
+   margin-top: 60px;
+   background-attachment: fixed;
+}
+
+.bg-middle{
+    width: 100%;
+    height: 650px;
+    background-image: url("/media/img_ano_de_oracao.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-position: bottom;
+    margin-top: 60px;
+    background-attachment: fixed;
+ }
+
+section.programacao .container{
+    display: flex;
+    width: 100%;
+    
+    
+}
+.container .box1{
+    width: 50%;   
+  
+}
+
+.container .box1 img{
+    width: 450px;
+    height: 550px;
+    padding: 50px 30px;
+    margin-left: 60px;
+}
+.container .box2{
+    width: 50%;
+    padding: 50px 20px;
+    
+}
+
+.box2 p{
+    padding-bottom: 20px;
+}
+
+.form-contato input[type=text], input[type=textarea]{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.form-contato input[type=submit]{
+    width: 100%;
+    background-color:#bdbdbd;
+    color: #585454;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.form-contato input[type=submit]:hover{
+    background-color: #585454;
+    color: #bdbdbd;
+}
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+  }
+
+  footer{
+        margin-top: 100px;
+      background-color: #585454;
+  }
+
+  .footer1 .container{
+      display: flex;
+     color:#bdbdbd;
+     width: 100%;
+     height: 200px;
+     align-items: center;
+  }
+
+  .footer1 .container .f1{
+      width: 33.3%;
+      padding-left: 20px;
+  }
+
+  .container .f1 p{
+      padding-top: 10px;
+  }
+
+  .container .f1 a{
+      
+      color: #bdbdbd;
+  }
+
+  .container .f1 h3{
+      color: #bdbdbd ;
+      float: right;
+      margin-right: 70px;
+      background-color: #424242;
+      padding: 15px;
+      font-size: 30px;
+      border-radius: 4px;
+  }
+
+  .container .f1 h3:hover{
+      background-color: #b4b4b4;
+      color: #424242;
+  }
+
+.footer2 p{ 
+      background-color: #424242;
+      color: #bdbdbd;
+      width: 100%;
+      height: 20px;
+      text-align: center;
+  }
+
+  /*estilos da página confissão de fé*/
+
+
+.img-confissao{
+    display: flex;
+}
+
+.img-confissao img{
+    width: 100%;
+    height: 338px;
+    object-position: center;
+    object-fit: cover;
+}
+
+  section.confissao{
+      width: 100%;
+       margin: 100px 0;
+    color: #bdbdbd;
+      background-color: #585454;
+      height: 100px;
+  }
+
+  .container .bg-confissao h2{
+    padding-top: 30px ;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .text-confissao h3{
+      font-weight: normal;
+      padding: 10px 20px;
+      text-decoration: underline;
+      font-size: 1.3em;
+  }
+
+  .text-confissao p{
+      font-weight: lighter;
+      padding: 20px 40px;
+      text-align: justify;
+  }
+
+
+  
+
+
+
+  /*final da estilização da confissão de fé*/
+
+  @media screen and (max-width: 480px){
+	header .logo img{
+		width: 200px;
+	}
+}
+
+@media screen and (max-width: 480px){
+	.container .bg-confissao h2{
+		width: 100%;
+        font-size: 1.6em;
+    }
+}
+
